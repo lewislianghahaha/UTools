@@ -36,23 +36,23 @@
             this.gvdtl = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnsearch = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtcustomernumber = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtmaterialnumber = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtcustomername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
             this.gvdtlu = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comtype = new System.Windows.Forms.ComboBox();
             this.btnsear = new System.Windows.Forms.Button();
+            this.comtype = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtmatname = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtmatnumber = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.Menu.SuspendLayout();
             this.tbcontrol.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -130,11 +130,11 @@
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnsearch);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.txtcustomernumber);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtmaterialnumber);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtcustomername);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(3, 3);
@@ -144,6 +144,8 @@
             // 
             // btnsearch
             // 
+            this.btnsearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnsearch.Location = new System.Drawing.Point(802, 8);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.Size = new System.Drawing.Size(75, 23);
@@ -151,12 +153,12 @@
             this.btnsearch.Text = "查询";
             this.btnsearch.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txtcustomernumber
             // 
-            this.textBox3.Location = new System.Drawing.Point(576, 9);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(164, 21);
-            this.textBox3.TabIndex = 5;
+            this.txtcustomernumber.Location = new System.Drawing.Point(576, 9);
+            this.txtcustomernumber.Name = "txtcustomernumber";
+            this.txtcustomernumber.Size = new System.Drawing.Size(164, 21);
+            this.txtcustomernumber.TabIndex = 5;
             // 
             // label3
             // 
@@ -165,14 +167,14 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 12);
             this.label3.TabIndex = 4;
-            this.label3.Text = "物料名称:";
+            this.label3.Text = "客户编码:";
             // 
-            // textBox2
+            // txtmaterialnumber
             // 
-            this.textBox2.Location = new System.Drawing.Point(324, 9);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(164, 21);
-            this.textBox2.TabIndex = 3;
+            this.txtmaterialnumber.Location = new System.Drawing.Point(324, 9);
+            this.txtmaterialnumber.Name = "txtmaterialnumber";
+            this.txtmaterialnumber.Size = new System.Drawing.Size(164, 21);
+            this.txtmaterialnumber.TabIndex = 3;
             // 
             // label2
             // 
@@ -183,12 +185,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "物料编码:";
             // 
-            // textBox1
+            // txtcustomername
             // 
-            this.textBox1.Location = new System.Drawing.Point(72, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(164, 21);
-            this.textBox1.TabIndex = 1;
+            this.txtcustomername.Location = new System.Drawing.Point(72, 9);
+            this.txtcustomername.Name = "txtcustomername";
+            this.txtcustomername.Size = new System.Drawing.Size(164, 21);
+            this.txtcustomername.TabIndex = 1;
             // 
             // label1
             // 
@@ -197,7 +199,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 12);
             this.label1.TabIndex = 0;
-            this.label1.Text = "公司名称:";
+            this.label1.Text = "客户名称:";
             // 
             // tabPage2
             // 
@@ -239,9 +241,9 @@
             this.panel3.Controls.Add(this.btnsear);
             this.panel3.Controls.Add(this.comtype);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.textBox5);
+            this.panel3.Controls.Add(this.txtmatname);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.textBox4);
+            this.panel3.Controls.Add(this.txtmatnumber);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(3, 3);
@@ -249,46 +251,16 @@
             this.panel3.Size = new System.Drawing.Size(913, 40);
             this.panel3.TabIndex = 0;
             // 
-            // textBox5
+            // btnsear
             // 
-            this.textBox5.Location = new System.Drawing.Point(293, 7);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(141, 21);
-            this.textBox5.TabIndex = 3;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(234, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 12);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "物料名称:";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(76, 7);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(141, 21);
-            this.textBox4.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 12);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "物料代码:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(456, 12);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 12);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "价格类型:";
+            this.btnsear.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnsear.Location = new System.Drawing.Point(763, 6);
+            this.btnsear.Name = "btnsear";
+            this.btnsear.Size = new System.Drawing.Size(75, 23);
+            this.btnsear.TabIndex = 6;
+            this.btnsear.Text = "查询";
+            this.btnsear.UseVisualStyleBackColor = true;
             // 
             // comtype
             // 
@@ -299,14 +271,46 @@
             this.comtype.Size = new System.Drawing.Size(121, 20);
             this.comtype.TabIndex = 5;
             // 
-            // btnsear
+            // label6
             // 
-            this.btnsear.Location = new System.Drawing.Point(763, 6);
-            this.btnsear.Name = "btnsear";
-            this.btnsear.Size = new System.Drawing.Size(75, 23);
-            this.btnsear.TabIndex = 6;
-            this.btnsear.Text = "查询";
-            this.btnsear.UseVisualStyleBackColor = true;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(456, 12);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 12);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "价格类型:";
+            // 
+            // txtmatname
+            // 
+            this.txtmatname.Location = new System.Drawing.Point(293, 7);
+            this.txtmatname.Name = "txtmatname";
+            this.txtmatname.Size = new System.Drawing.Size(141, 21);
+            this.txtmatname.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(234, 12);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(59, 12);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "物料名称:";
+            // 
+            // txtmatnumber
+            // 
+            this.txtmatnumber.Location = new System.Drawing.Point(76, 7);
+            this.txtmatnumber.Name = "txtmatnumber";
+            this.txtmatnumber.Size = new System.Drawing.Size(141, 21);
+            this.txtmatnumber.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(17, 12);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(59, 12);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "物料代码:";
             // 
             // Main
             // 
@@ -317,7 +321,7 @@
             this.Controls.Add(this.Menu);
             this.MainMenuStrip = this.Menu;
             this.Name = "Main";
-            this.Text = "U订货工具";
+            this.Text = "U工具";
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
             this.tbcontrol.ResumeLayout(false);
@@ -346,19 +350,19 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView gvdtl;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtcustomername;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnsearch;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtcustomernumber;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtmaterialnumber;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView gvdtlu;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtmatnumber;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtmatname;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comtype;
