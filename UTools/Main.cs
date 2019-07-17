@@ -157,6 +157,7 @@ namespace UTools
                     load.ShowDialog();
 
                     gvdtl.DataSource = task.RestulTable;
+                    label7.Text = $"查询出总行数:{gvdtl.Rows.Count}";
                     if (gvdtl.Rows.Count == 0) throw new Exception("没有查询到相关记录,请在U订货同步平台查询‘U商品档案’及‘U客户档案’是否已下载相关记录");
 
                     //当查询有值后提示是否导出
@@ -205,6 +206,7 @@ namespace UTools
                     load.ShowDialog();
 
                     gvdtlu.DataSource = task.RestulTable;
+                    label8.Text = $"查询出总行数:{gvdtlu.Rows.Count}";
                     if (gvdtlu.Rows.Count == 0) throw new Exception("没有查询到相关记录,请在U订货同步平台查询‘U商品档案’及‘U客户档案’是否已下载相关记录");
 
                     //当查询有值后提示是否导出
@@ -312,6 +314,8 @@ namespace UTools
                 load.Close();
             }));
         }
+
+
 
     }
 }

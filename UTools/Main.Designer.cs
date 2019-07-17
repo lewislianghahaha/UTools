@@ -32,8 +32,6 @@
             this.tmExport = new System.Windows.Forms.ToolStripMenuItem();
             this.tbcontrol = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.gvdtl = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnsearch = new System.Windows.Forms.Button();
             this.txtcustomernumber = new System.Windows.Forms.TextBox();
@@ -43,8 +41,6 @@
             this.txtcustomername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.gvdtlu = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnsear = new System.Windows.Forms.Button();
             this.comtype = new System.Windows.Forms.ComboBox();
@@ -53,16 +49,26 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtmatnumber = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.gvdtl = new System.Windows.Forms.DataGridView();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.gvdtlu = new System.Windows.Forms.DataGridView();
             this.Menu.SuspendLayout();
             this.tbcontrol.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvdtl)).BeginInit();
             this.panel1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvdtlu)).BeginInit();
             this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvdtl)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvdtlu)).BeginInit();
             this.SuspendLayout();
             // 
             // Menu
@@ -94,6 +100,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.panel5);
             this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -103,28 +110,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "可销控报表";
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.gvdtl);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 43);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(913, 475);
-            this.panel2.TabIndex = 1;
-            // 
-            // gvdtl
-            // 
-            this.gvdtl.AllowUserToAddRows = false;
-            this.gvdtl.AllowUserToDeleteRows = false;
-            this.gvdtl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvdtl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gvdtl.Location = new System.Drawing.Point(0, 0);
-            this.gvdtl.Name = "gvdtl";
-            this.gvdtl.ReadOnly = true;
-            this.gvdtl.RowTemplate.Height = 23;
-            this.gvdtl.Size = new System.Drawing.Size(913, 475);
-            this.gvdtl.TabIndex = 0;
             // 
             // panel1
             // 
@@ -203,6 +188,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.panel6);
             this.tabPage2.Controls.Add(this.panel4);
             this.tabPage2.Controls.Add(this.panel3);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -212,28 +198,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "U订货价目表";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.gvdtlu);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(3, 43);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(913, 475);
-            this.panel4.TabIndex = 1;
-            // 
-            // gvdtlu
-            // 
-            this.gvdtlu.AllowUserToAddRows = false;
-            this.gvdtlu.AllowUserToDeleteRows = false;
-            this.gvdtlu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvdtlu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gvdtlu.Location = new System.Drawing.Point(0, 0);
-            this.gvdtlu.Name = "gvdtlu";
-            this.gvdtlu.ReadOnly = true;
-            this.gvdtlu.RowTemplate.Height = 23;
-            this.gvdtlu.Size = new System.Drawing.Size(913, 475);
-            this.gvdtlu.TabIndex = 0;
             // 
             // panel3
             // 
@@ -312,6 +276,86 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "物料代码:";
             // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(3, 43);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(913, 25);
+            this.panel2.TabIndex = 1;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.gvdtl);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(3, 68);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(913, 450);
+            this.panel5.TabIndex = 2;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 6);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 12);
+            this.label7.TabIndex = 0;
+            // 
+            // gvdtl
+            // 
+            this.gvdtl.AllowUserToAddRows = false;
+            this.gvdtl.AllowUserToDeleteRows = false;
+            this.gvdtl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvdtl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvdtl.Location = new System.Drawing.Point(0, 0);
+            this.gvdtl.Name = "gvdtl";
+            this.gvdtl.ReadOnly = true;
+            this.gvdtl.RowTemplate.Height = 23;
+            this.gvdtl.Size = new System.Drawing.Size(913, 450);
+            this.gvdtl.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(3, 43);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(913, 25);
+            this.panel4.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(10, 5);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 12);
+            this.label8.TabIndex = 0;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.gvdtlu);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(3, 68);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(913, 450);
+            this.panel6.TabIndex = 2;
+            // 
+            // gvdtlu
+            // 
+            this.gvdtlu.AllowUserToAddRows = false;
+            this.gvdtlu.AllowUserToDeleteRows = false;
+            this.gvdtlu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvdtlu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvdtlu.Location = new System.Drawing.Point(0, 0);
+            this.gvdtlu.Name = "gvdtlu";
+            this.gvdtlu.ReadOnly = true;
+            this.gvdtlu.RowTemplate.Height = 23;
+            this.gvdtlu.Size = new System.Drawing.Size(913, 450);
+            this.gvdtlu.TabIndex = 0;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -326,15 +370,19 @@
             this.Menu.PerformLayout();
             this.tbcontrol.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvdtl)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvdtlu)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvdtl)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvdtlu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,8 +395,6 @@
         private System.Windows.Forms.TabControl tbcontrol;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView gvdtl;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtcustomername;
         private System.Windows.Forms.Label label1;
@@ -357,8 +403,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtmaterialnumber;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DataGridView gvdtlu;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtmatnumber;
         private System.Windows.Forms.Label label4;
@@ -367,6 +411,14 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comtype;
         private System.Windows.Forms.Button btnsear;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.DataGridView gvdtl;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.DataGridView gvdtlu;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label8;
     }
 }
 
