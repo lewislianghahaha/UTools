@@ -40,7 +40,7 @@ namespace UTools.DB
                 //根据TYPE获取对应的临时表
                 var tempdt = type == "0" ? dtList.Get_SalesListdt() : dtList.Get_UPriceListDt();
 
-                var sqlscript = type == "0" ? sqlList.Get_SalesList(customernumber, materialfnumber, customername) : 
+                var sqlscript = type == "0" ? sqlList.Get_SalesList(customernumber, materialfnumber, customername,materialname) : 
                                             sqlList.Get_UPriceList(materialfnumber, materialname, pricetype);
 
                 var sqlDataAdapter=new SqlDataAdapter(sqlscript,GetConn());

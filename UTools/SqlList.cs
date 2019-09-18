@@ -12,8 +12,9 @@ namespace UTools
         /// <param name="customfnumber">客户编码</param>
         /// <param name="materialfnumber">物料编码</param>
         /// <param name="customername">客户名称</param>
+        /// <param name="materialname">物料名称</param>
         /// <returns></returns>
-        public string Get_SalesList(string customfnumber,string materialfnumber,string customername)
+        public string Get_SalesList(string customfnumber,string materialfnumber,string customername,string materialname)
         {
             _result = $@"SELECT   '客户' 授权对象类型,t8.FNAME AS 授权对象,t7.FNUMBER AS 授权对象编码,
                                    t12.mc 商品名称,t12.cCode 商品编码,'037214' 组织编码,'雅图高新材料有限公司' 组织名称
@@ -57,6 +58,7 @@ namespace UTools
                         AND (t7.FNUMBER like '%{customfnumber}%' or '{customfnumber}' is null)  --'086.06.311.002'
                         AND (t5.FNUMBER like '%{materialfnumber}%' or '{materialfnumber}' is null) --IN('SP-823-25L-00-00')
                         and (t8.fname like '%{customername}%' or '{customername}' is null) --in ('上海陶森华贸易有限公司')
+                        AND (T6.fname like '%{materialname}%' or '{materialname}' is null) --物料名称
                         ORDER BY t8.FNAME,t7.FNUMBER,t12.mc,t12.cCode";
 
             return _result;

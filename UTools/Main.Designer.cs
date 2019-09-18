@@ -32,6 +32,10 @@
             this.tmExport = new System.Windows.Forms.ToolStripMenuItem();
             this.tbcontrol = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.gvdtl = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnsearch = new System.Windows.Forms.Button();
             this.txtcustomernumber = new System.Windows.Forms.TextBox();
@@ -41,6 +45,10 @@
             this.txtcustomername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.gvdtlu = new System.Windows.Forms.DataGridView();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnsear = new System.Windows.Forms.Button();
             this.comtype = new System.Windows.Forms.ComboBox();
@@ -49,26 +57,20 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtmatnumber = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.gvdtl = new System.Windows.Forms.DataGridView();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.gvdtlu = new System.Windows.Forms.DataGridView();
+            this.txtmateriname = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.Menu.SuspendLayout();
             this.tbcontrol.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvdtl)).BeginInit();
-            this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvdtlu)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // Menu
@@ -111,9 +113,51 @@
             this.tabPage1.Text = "可销控报表";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.gvdtl);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(3, 82);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(913, 436);
+            this.panel5.TabIndex = 2;
+            // 
+            // gvdtl
+            // 
+            this.gvdtl.AllowUserToAddRows = false;
+            this.gvdtl.AllowUserToDeleteRows = false;
+            this.gvdtl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvdtl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvdtl.Location = new System.Drawing.Point(0, 0);
+            this.gvdtl.Name = "gvdtl";
+            this.gvdtl.ReadOnly = true;
+            this.gvdtl.RowTemplate.Height = 23;
+            this.gvdtl.Size = new System.Drawing.Size(913, 436);
+            this.gvdtl.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(3, 57);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(913, 25);
+            this.panel2.TabIndex = 1;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 6);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 12);
+            this.label7.TabIndex = 0;
+            // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.txtmateriname);
+            this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.btnsearch);
             this.panel1.Controls.Add(this.txtcustomernumber);
             this.panel1.Controls.Add(this.label3);
@@ -124,14 +168,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(913, 40);
+            this.panel1.Size = new System.Drawing.Size(913, 54);
             this.panel1.TabIndex = 0;
             // 
             // btnsearch
             // 
             this.btnsearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnsearch.Location = new System.Drawing.Point(802, 8);
+            this.btnsearch.Location = new System.Drawing.Point(796, 1);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.Size = new System.Drawing.Size(75, 23);
             this.btnsearch.TabIndex = 6;
@@ -140,7 +184,7 @@
             // 
             // txtcustomernumber
             // 
-            this.txtcustomernumber.Location = new System.Drawing.Point(576, 9);
+            this.txtcustomernumber.Location = new System.Drawing.Point(555, 2);
             this.txtcustomernumber.Name = "txtcustomernumber";
             this.txtcustomernumber.Size = new System.Drawing.Size(164, 21);
             this.txtcustomernumber.TabIndex = 5;
@@ -148,7 +192,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(514, 14);
+            this.label3.Location = new System.Drawing.Point(493, 7);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(59, 12);
             this.label3.TabIndex = 4;
@@ -156,7 +200,7 @@
             // 
             // txtmaterialnumber
             // 
-            this.txtmaterialnumber.Location = new System.Drawing.Point(324, 9);
+            this.txtmaterialnumber.Location = new System.Drawing.Point(74, 3);
             this.txtmaterialnumber.Name = "txtmaterialnumber";
             this.txtmaterialnumber.Size = new System.Drawing.Size(164, 21);
             this.txtmaterialnumber.TabIndex = 3;
@@ -164,7 +208,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(262, 14);
+            this.label2.Location = new System.Drawing.Point(12, 8);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 12);
             this.label2.TabIndex = 2;
@@ -172,7 +216,7 @@
             // 
             // txtcustomername
             // 
-            this.txtcustomername.Location = new System.Drawing.Point(72, 9);
+            this.txtcustomername.Location = new System.Drawing.Point(315, 2);
             this.txtcustomername.Name = "txtcustomername";
             this.txtcustomername.Size = new System.Drawing.Size(164, 21);
             this.txtcustomername.TabIndex = 1;
@@ -180,7 +224,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 14);
+            this.label1.Location = new System.Drawing.Point(256, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 12);
             this.label1.TabIndex = 0;
@@ -198,6 +242,46 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "U订货价目表";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.gvdtlu);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(3, 68);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(913, 450);
+            this.panel6.TabIndex = 2;
+            // 
+            // gvdtlu
+            // 
+            this.gvdtlu.AllowUserToAddRows = false;
+            this.gvdtlu.AllowUserToDeleteRows = false;
+            this.gvdtlu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gvdtlu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvdtlu.Location = new System.Drawing.Point(0, 0);
+            this.gvdtlu.Name = "gvdtlu";
+            this.gvdtlu.ReadOnly = true;
+            this.gvdtlu.RowTemplate.Height = 23;
+            this.gvdtlu.Size = new System.Drawing.Size(913, 450);
+            this.gvdtlu.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(3, 43);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(913, 25);
+            this.panel4.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(10, 5);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 12);
+            this.label8.TabIndex = 0;
             // 
             // panel3
             // 
@@ -276,85 +360,21 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "物料代码:";
             // 
-            // panel2
+            // txtmateriname
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(3, 43);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(913, 25);
-            this.panel2.TabIndex = 1;
+            this.txtmateriname.Location = new System.Drawing.Point(74, 27);
+            this.txtmateriname.Name = "txtmateriname";
+            this.txtmateriname.Size = new System.Drawing.Size(164, 21);
+            this.txtmateriname.TabIndex = 8;
             // 
-            // panel5
+            // label9
             // 
-            this.panel5.Controls.Add(this.gvdtl);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(3, 68);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(913, 450);
-            this.panel5.TabIndex = 2;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 6);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 12);
-            this.label7.TabIndex = 0;
-            // 
-            // gvdtl
-            // 
-            this.gvdtl.AllowUserToAddRows = false;
-            this.gvdtl.AllowUserToDeleteRows = false;
-            this.gvdtl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvdtl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gvdtl.Location = new System.Drawing.Point(0, 0);
-            this.gvdtl.Name = "gvdtl";
-            this.gvdtl.ReadOnly = true;
-            this.gvdtl.RowTemplate.Height = 23;
-            this.gvdtl.Size = new System.Drawing.Size(913, 450);
-            this.gvdtl.TabIndex = 0;
-            // 
-            // panel4
-            // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.label8);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(3, 43);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(913, 25);
-            this.panel4.TabIndex = 1;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(10, 5);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 12);
-            this.label8.TabIndex = 0;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.gvdtlu);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(3, 68);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(913, 450);
-            this.panel6.TabIndex = 2;
-            // 
-            // gvdtlu
-            // 
-            this.gvdtlu.AllowUserToAddRows = false;
-            this.gvdtlu.AllowUserToDeleteRows = false;
-            this.gvdtlu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvdtlu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gvdtlu.Location = new System.Drawing.Point(0, 0);
-            this.gvdtlu.Name = "gvdtlu";
-            this.gvdtlu.ReadOnly = true;
-            this.gvdtlu.RowTemplate.Height = 23;
-            this.gvdtlu.Size = new System.Drawing.Size(913, 450);
-            this.gvdtlu.TabIndex = 0;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 32);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(59, 12);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "物料名称:";
             // 
             // Main
             // 
@@ -370,19 +390,19 @@
             this.Menu.PerformLayout();
             this.tbcontrol.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvdtl)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvdtl)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gvdtlu)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -419,6 +439,8 @@
         private System.Windows.Forms.DataGridView gvdtlu;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtmateriname;
+        private System.Windows.Forms.Label label9;
     }
 }
 

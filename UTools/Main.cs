@@ -144,12 +144,15 @@ namespace UTools
                     var customername = txtcustomername.Text;
                     //获取物料编码
                     var materialnumber = txtmaterialnumber.Text;
+                    //
+                    var materialname = txtmateriname.Text;
 
                     task.TaskId = 0;
                     task.Type = "0";  //0:可销控 1:U订货价目表
                     task.Customernumber = customernumber;
                     task.Materialnumber = materialnumber;
                     task.Customername = customername;
+                    task.Materialname = materialname;
 
                     //使用子线程工作(作用:通过调用子线程进行控制Load窗体的关闭情况)
                     new Thread(Start).Start();
