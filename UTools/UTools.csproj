@@ -120,6 +120,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\UTools.vshost.exe" />
+    <Content Include="DLL\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="DLL\NPOI.dll" />
+    <Content Include="DLL\NPOI.OOXML.dll" />
+    <Content Include="DLL\NPOI.OpenXml4Net.dll" />
+    <Content Include="DLL\NPOI.OpenXmlFormats.dll" />
     <Content Include="obj\Debug\UTools.csproj.FileListAbsolute.txt" />
   </ItemGroup>
   <ItemGroup>

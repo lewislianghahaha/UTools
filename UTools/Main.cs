@@ -144,7 +144,7 @@ namespace UTools
                     var customername = txtcustomername.Text;
                     //获取物料编码
                     var materialnumber = txtmaterialnumber.Text;
-                    //
+                    //获取物料名称
                     var materialname = txtmateriname.Text;
 
                     task.TaskId = 0;
