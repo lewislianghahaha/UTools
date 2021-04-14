@@ -51,7 +51,7 @@ namespace UTools
                         AND (LEN(t6.FNAME) > 0)
                         AND (t7.FNUMBER NOT LIKE '%.YC') /*AND (t7.FNUMBER NOT LIKE '%GY%')*/ 
                         AND (t7.FNUMBER NOT LIKE '%-合%') 
-                        AND (t7.FNUMBER NOT LIKE '%SX%')
+                        --AND (t7.FNUMBER NOT LIKE '%SX%')
                         AND t1.F_YTC_COMBO IN('U订货特殊价','U订货5折常规价')
                         AND t2.FFORBIDSTATUS != 'B'
                         
