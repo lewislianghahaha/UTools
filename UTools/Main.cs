@@ -165,7 +165,7 @@ namespace UTools
 
                     //当查询有值后提示是否导出
                     var clickMessage = $"数据已获取,是否需要导出至Excel?";
-                    if (MessageBox.Show(clickMessage, "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Information) ==DialogResult.Yes)
+                    if (MessageBox.Show(clickMessage, $"提示", MessageBoxButtons.YesNo, MessageBoxIcon.Information) ==DialogResult.Yes)
                     {
                         Exportdt("0");
                     }
@@ -173,7 +173,7 @@ namespace UTools
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, $"错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -250,7 +250,7 @@ namespace UTools
         {
             try
             {
-                var saveFileDialog = new SaveFileDialog { Filter = "Xlsx文件|*.xlsx" };
+                var saveFileDialog = new SaveFileDialog { Filter = $"Xlsx文件|*.xlsx" };
                 if (saveFileDialog.ShowDialog() != DialogResult.OK) return;
                 var fileAdd = saveFileDialog.FileName;
 
@@ -269,7 +269,7 @@ namespace UTools
                 switch (result)
                 {
                     case "0":
-                        MessageBox.Show($"导出成功!可从EXCEL中查阅导出效果", "成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show($"导出成功!可从EXCEL中查阅导出效果", $"成功", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         break;
                     default:
                         throw (new Exception(result));
@@ -301,7 +301,7 @@ namespace UTools
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, $"错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

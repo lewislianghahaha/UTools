@@ -47,13 +47,23 @@ namespace UTools
                         AND (t1.FFORBIDSTATUS = 'A') 
                         AND (t7.FNUMBER NOT LIKE '%.JC') AND (t7.FNUMBER NOT LIKE '%.YC') 
                         AND (t9.FLOCALEID <> 1033) 
-                        AND (dbo.GetIncludMAT(t7.FCUSTID, t5.FMATERIALID, t5.FMATERIALGROUP) > 0) 
+                        --AND (dbo.GetIncludMAT(t7.FCUSTID, t5.FMATERIALID, t5.FMATERIALGROUP) > 0) 
                         AND (LEN(t6.FNAME) > 0)
                         AND (t7.FNUMBER NOT LIKE '%.YC') /*AND (t7.FNUMBER NOT LIKE '%GY%')*/ 
                         AND (t7.FNUMBER NOT LIKE '%-合%') 
                         --AND (t7.FNUMBER NOT LIKE '%SX%')
                         AND t1.F_YTC_COMBO IN('U订货特殊价','U订货5折常规价')
                         AND t2.FFORBIDSTATUS != 'B'
+
+                        AND EXISTS (
+						               SELECT * 
+						               FROM (
+						  						SELECT COUNT(*) ID FROM AIS20181204095717.dbo.T_SAL_SCCUSTMAT A WHERE A.FCUSTOMERID=t7.FCUSTID AND A.FMATERIALID=t5.FMATERIALID
+												UNION ALL
+												SELECT COUNT(*) ID FROM AIS20181204095717.dbo.T_SAL_SCCUSTMAT a WHERE a.FCUSTOMERID=t7.FCUSTID AND a.FMATCATEGORYID=t5.FMATERIALGROUP
+						                    )X
+						               WHERE X.ID>0
+						           ) --若上面两者不返回0的话,才显示
                         
                         AND (t7.FNUMBER like '%{customfnumber}%' or '{customfnumber}' is null)  --'086.06.311.002'
                         AND (t5.FNUMBER like '%{materialfnumber}%' or '{materialfnumber}' is null) --IN('SP-823-25L-00-00')
